@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="{% static 'single_pages/css/style.css' %}" media="screen">
+   <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+   <title>Nav bar</title>
+   <script src="https://kit.fontawesome.com/1c141b19b1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar">
+       <div class="navbar_logo">
+        <i class="fab fa-artstation"></i>
+        <a href="">JB BOT</a>
+
+       </div> 
+       
+       <ul class = "navbar_menu">
+           <li><a href="">HOME</a></li>
+           <li><a href="">라면</a></li>
+           <li><a href="">음료수</a></li>
+           <li><a href="">과자</a></li>
+          
+
+       </ul>
+
+       <ul class= "navbar_icons">
+        <li><i class="fab fa-twitter"></i></li>
+        <li><i class="fab fa-facebook-f"></i></li>
+       </ul>
+       <a href="#" class="navbar_toogleBtn">
+         <i class="fas fa-bars"></i>
+       </a> 
+
+    </nav>
+</body>
+</html>

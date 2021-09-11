@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+	<title>계기판 연습하기</title>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/fusioncharts.js"></script>
+	<script type="text/javascript" src="https://cdn.fusioncharts.com/fusioncharts/latest/themes/fusioncharts.theme.fusion.js"></script>
+	<script type="text/javascript">
+        FusionCharts.ready(function() {
+            var cSatScoreChart = new FusionCharts({
+    type: 'angulargauge',
+    renderAt: 'chart-container',
+    width: '500',
+    height: '400',
+    dataFormat: 'json',
+    dataSource: {
+      "chart": {
+        "caption": "나트륨 함량 표시",
+        "subcaption": "진라면",
+        "lowerLimit": "0",
+        "upperLimit": "2000",
+        "showValue": "1",
+        "valueBelowPivot": "1",
+        "majorTMNumber": "9",
+        "minorTMNumber": "4",
+        "gaugeFillMix": "{dark-40},{light-40},{dark-20}",
+        "theme": "fusion"
+      },
+      "colorRange": {
+        "color": [{
+            "minValue": "0",
+            "maxValue": "700",
+            "code": "#6baa01"
+          },
+          {
+            "minValue": "700",
+            "maxValue": "1400",
+            "code": "#f8bd19"
+          },
+          {
+            "minValue": "1400",
+            "maxValue": "2000",
+            "code": "#e44a00"
+          }
+        ]
+      },
+      "dials": {
+        "dial": [{
+          "value": "1760"
+        }]
+      }
+    }
+  }).render();
+});
+
+	</script>
+</head>
+	<body>
+		<div id="chart-container">FusionCharts XT will load here!</div>
+	</body>
+</html>
