@@ -15,9 +15,9 @@ def generic(request):
         'single_pages/generic.html'
     )
 
-def lang_view(request):
-    langs = Lang.objects.all()
-    context = {
-        "langs": langs
-    }
-    return render(request, 'single_pages/lang.html', context) #
+#def lang_view(request):
+#    langs = Lang.objects.all()
+#    context = {
+#        "langs": langs
+#    }
+#    return render(request, 'single_pages/lang.html', context) #

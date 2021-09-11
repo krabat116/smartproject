@@ -24,7 +24,7 @@
 
 							<!-- Header -->
 								<header id="header">
-									<a href="index.html" class="logo"><strong>B3팀</strong>&nbsp;&nbsp;&nbsp;정영훈, 고정범, 권우정, 김유, 이예진</a>
+									<a href="/" class="logo"><strong>B3팀</strong>&nbsp;&nbsp;&nbsp;정영훈, 고정범, 권우정, 김유, 이예진</a>
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -41,7 +41,7 @@
 									</header>
 									<div class="posts">
 										<article>
-											<a href="#" class="image"><img src="images/진라면.png" alt="" /></a>
+											<a href="#" class="image"><img src={%static 'single_pages/images/진라면.png'%} alt="" /></a>
 											<h3>진라면</h3>
 											<p>진라면의 영양성분과 원재료 알아보기</p>
 											<ul class="actions">
@@ -49,7 +49,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/진짬뽕.jpg" alt="" /></a>
+											<a href="#" class="image"><img src={%static 'single_pages/images/진짬뽕.jpg'%} alt="" /></a>
 											<h3>진짬뽕</h3>
 											<p>진짬뽕의 영양성분과 원재료 알아보기</p>
 											<ul class="actions">
@@ -57,7 +57,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/진비빔면.jpg" alt="" /></a>
+											<a href="#" class="image"><img src={%static 'single_pages/images/진비빔면.jpg'%} alt="" /></a>
 											<h3>진비빔면</h3>
 											<p>진비빔면의 영양성분과 원재료 알아보기</p>
 											<ul class="actions">
@@ -65,7 +65,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/쇠고기미역국.png" alt="" /></a>
+											<a href="#" class="image"><img src={%static 'single_pages/images/쇠고기미역국.png'%} alt="" /></a>
 											<h3>쇠고기미역국</h3>
 											<p>쇠고기미역국의 영양성분과 원재료 알아보기</p>
 											<ul class="actions">
@@ -73,7 +73,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/신라면.png" alt="" /></a>
+											<a href="#" class="image"><img src={%static 'single_pages/images/신라면.png'%} alt="" /></a>
 											<h3>신라면</h3>
 											<p>신라면의 영양성분과 원재료 알아보기</p>
 											<ul class="actions">
@@ -81,7 +81,7 @@
 											</ul>
 										</article>
 										<article>
-											<a href="#" class="image"><img src="images/팔도비빔면.png" alt="" /></a>
+											<a href="#" class="image"><img src={%static 'single_pages/images/팔도비빔면.png'%} alt="" /></a>
 											<h3>팔도비빔면</h3>
 											<p>팔도비빔면의 영양성분과 원재료 알아보기</p>
 											<ul class="actions">
@@ -111,13 +111,13 @@
 										<h2>Menu</h2>
 									</header>
 									<ul>
-										<li><a href="index.html">메인</a></li>
+										<li><a href="/index/">메인</a></li>
 										<!--<li><a href="generic.html">Generic</a></li>
 										<li><a href="elements.html">Elements</a></li>-->
 										<li>
 											<span class="opener">라면</span>
 											<ul>
-												<li><a href="generic.html">삼양</a></li>
+												<li><a href="/generic/">삼양</a></li>
 												<li><a href="#">팔도</a></li>
 												<li><a href="#">농심</a></li>
 												<li><a href="#">오뚜기</a></li>
@@ -158,7 +158,7 @@
 									</header>
 									<div class="mini-posts">
 										<article>
-											<a href="#" class="image"><img src="images/식약처 로고.png" alt="" /></a>
+											<a href="#" class="image"><img src={%static 'single_pages/images/식약처 로고.png'%} alt="" /></a>
 											<p>식약처에서 자료를 찾았어요.</p>
 										</article>
 										<!--<article>
@@ -200,11 +200,12 @@
 			</div>
 
 		<!-- Scripts -->
-			<script src="static/single_pages/js/jquery.min.js"></script>
-			<script src="static/single_pages/js/browser.min.js"></script>
-			<script src="static/single_pages/js/breakpoints.min.js"></script>
-			<script src="static/single_pages/js/util.js"></script>
-			<script src="static/single_pages/js/main.js"></script>
+			<script src={%static 'single_pages/js/jquery.min.js' %} ></script>
+			<script src={%static 'single_pages/js/browser.min.js' %} ></script>
+			<script src={%static 'single_pages/js/breakpoints.min.js' %} ></script>
+			<script src={%static 'single_pages/js/util.js' %} ></script>
+			<script src={%static 'single_pages/js/main.js' %} ></script>
+
 
 	</body>
 </html>
