@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
 
-#SECRET_KEY = 'django-insecure-q=laj6anbd-v7(mc)!&qh)4!ad#$j0^ow@#(n*!4--ktv)izth'
+SECRET_KEY = 'django-insecure-q=laj6anbd-v7(mc)!&qh)4!ad#$j0^ow@#(n*!4--ktv)izth'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -84,8 +84,19 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #        'NAME': BASE_DIR / 'db.sqlite3',
 #    }
 # }
-DATABASES=my_settings.DATABASES
-SECRET_KEY=my_settings.SECRET_KEY
+#DATABASES=my_settings.DATABASES
+#SECRET_KEY=my_settings.SECRET_KEY
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'food',
+        'USER': 'root',
+        'HOST': 'localhost',
+        'PORT': '3306',
+        'PASSWORD':'dudgns9101',
+    }
+}
 
 
 

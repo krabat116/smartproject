@@ -1,3 +1,8 @@
+
+
+
+
+
 <!DOCTYPE HTML>
 {% load static %}
 <!--
@@ -37,59 +42,67 @@
 							<!-- Content -->
 								<section>
 									<header class="major">
-										<h2>제품 목록</h2>
+										<h2>라면 진라면매운맛</h2>
 									</header>
 									<div class="posts">
 										<article>
 											<a href="#" class="image"><img src={%static 'single_pages/images/진라면.png'%} alt="" /></a>
-											<h3>진라면</h3>
-											<p>진라면의 영양성분과 원재료 알아보기</p>
+											<h3>진라면매운맛</h3>
+											<!--p>진라면의 영양성분과 원재료 알아보기</p-->
 											<ul class="actions">
-												<li><a href="/genericr/" class="button">More</a></li>
+												<!--li><a href="#" class="button">More</a></li-->
 											</ul>
 										</article>
-										<article>
-											<a href="#" class="image"><img src={%static 'single_pages/images/진짬뽕.jpg'%} alt="" /></a>
-											<h3>진짬뽕</h3>
-											<p>진짬뽕의 영양성분과 원재료 알아보기</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src={%static 'single_pages/images/진비빔면.jpg'%} alt="" /></a>
-											<h3>진비빔면</h3>
-											<p>진비빔면의 영양성분과 원재료 알아보기</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src={%static 'single_pages/images/쇠고기미역국.png'%} alt="" /></a>
-											<h3>쇠고기미역국</h3>
-											<p>쇠고기미역국의 영양성분과 원재료 알아보기</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src={%static 'single_pages/images/신라면.png'%} alt="" /></a>
-											<h3>신라면</h3>
-											<p>신라면의 영양성분과 원재료 알아보기</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
-										<article>
-											<a href="#" class="image"><img src={%static 'single_pages/images/팔도비빔면.png'%} alt="" /></a>
-											<h3>팔도비빔면</h3>
-											<p>팔도비빔면의 영양성분과 원재료 알아보기</p>
-											<ul class="actions">
-												<li><a href="#" class="button">More</a></li>
-											</ul>
-										</article>
+										
+										
 									</div>
 								</section>
+
+                                <table class="table bg-white">
+                                  <thead class="bg-info">
+
+                                      <tr class="text-white">
+
+                                          <th scope="col">제품명</th>
+										  <th scope="col">브랜드</th>
+										  <th scope="col">제품상세분류</th>
+										  <th scope="col">1회제공량</th>
+										  <th scope="col">에너지(kcal)</th>
+										  <th scope="col">단백질(g)</th>
+										  <th scope="col">지질(g)</th>
+                                          <th scope="col">탄수화물(g)</th>
+                                          <th scope="col">총당류(g)</th>
+                                          <th scope="col">나트륨(mg)</th>
+                                          <th scope="col">콜레스테롤(mg)</th>
+                                          <th scope="col">총 포화 지방산(g)</th>
+                                          <th scope="col">트렌스 지방산(g)</th>
+                                      </tr>
+                                  </thead>
+                                  <tbody>
+                                       {% for jinmae in jin %}
+                                        <tr>
+                                          <th scope="row">{{ jinmae.제품명 }}</th>
+                                          <td>{{ jinmae.브랜드 }}</td>
+                                          <td>{{ jinmae.제품상세분류 }}</td>
+										  <td>{{ jinmae.제공량 }}</td>
+										  <td>{{ jinmae.에너지 }}</td>
+										  <td>{{ jinmae.단백질 }}</td>
+										  <td>{{ jinmae.지질 }}</td>
+										  <td>{{ jinmae.탄수화물 }}</td>
+										  <td>{{ jinmae.총당류 }}</td>
+										  <td>{{ jinmae.나트륨 }}</td>
+										  <td>{{ jinmae.콜레스테롤 }}</td>
+										  <td>{{ jinmae.총포화지방산 }}</td>
+										  <td>{{ jinmae.트랜스지방산 }}</td>
+                                          
+                                        </tr>
+                                      {% endfor %}
+              
+                                  </tbody>
+                              </table>
+
+
+								
 
 						</div>
 					</div>
@@ -117,10 +130,10 @@
 										<li>
 											<span class="opener">라면</span>
 											<ul>
-												<li><a href="/generic/">오뚜기</a></li>
+												<li><a href="/generic/">삼양</a></li>
 												<li><a href="#">팔도</a></li>
 												<li><a href="#">농심</a></li>
-												<li><a href="#">삼양</a></li>
+												<li><a href="#">오뚜기</a></li>
 											</ul>
 										</li>
 										<!--<li><a href="#">Etiam Dolore</a></li>

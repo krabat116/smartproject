@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from .models import Lang
+from .models import Jinmae, Lang
 
 
 # Create your views here.
@@ -14,6 +14,16 @@ def generic(request):
         request,
         'single_pages/generic.html'
     )
+
+
+def genericr(request):
+    jin = Jinmae.objects.all()
+    context={
+        'jin' :jin
+    }
+    return render(request, 'single_pages/genericr.html', context)
+
+
 
 #def lang_view(request):
 #    langs = Lang.objects.all()
